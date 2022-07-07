@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  margin-left: -25px;
+  margin-top: -25px;
+}
