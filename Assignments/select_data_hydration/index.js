@@ -10,16 +10,23 @@ const state = {
 
 const select_letters = document.getElementById("letters");
 const select_fruits = document.getElementById("fruits");
-let letters_options = "";
-let fruits_options = "";
-const getOption = (value, name) => {
-  return `<option value = "${value}">${name}</option>`
+
+const getOption = (value) => {
+  const newOption =  document.createElement("option");
+  newOption.value = value;
+  newOption.innerHTML = value;
+  return newOption;
 }
 
-Object.entries(state).forEach((item, index) => {
-  letters_options += getOption(item[0], item[0]);
-  fruits_options += getOption(item[1], item[1]);
+Object.entries(state).forEach((item) => {
+  select_letters.append(getOption(item[0]));
+  select_fruits.append(getOption(item[1]));
 });
 
-select_letters.innerHTML = letters_options;
-select_fruits.innerHTML = fruits_options;
+select_letters.onchange = (event) => {
+  select_fruits.selectedIndex = event.target.selectedIndex;
+}
+
+select_fruits.onchange = (event) => {
+  select_letters.selectedIndex = event.target.selectedIndex;
+}
