@@ -1,0 +1,73 @@
+:root{
+  --to-do-item-height:2rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: wheat;
+  height: 100vh;
+}
+
+header, footer{
+  position: fixed;
+  background-color:aquamarine;
+  text-align: center;
+  width: 100%;
+}
+
+footer{
+  bottom: 0;
+}
+
+main{
+  height: 100%;
+  display: flex;
+}
+
+.to-do-container{
+  margin: auto;
+  padding: 0;
+  width: 40vw;
+  height: 60vh;
+  overflow: auto;
+}
+
+.to-do-header input{
+  width: 100%;
+  height: 10%;
+  border: none;
+}
+
+.to-do-item{
+  height: 2rem;
+  background-color:chocolate;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-do-item span{
+  padding: 0 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.delete-btn{
+  padding: 0 0.2rem;
+  vertical-align: middle;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: green;
+}
+
+.delete-btn:hover{
+  font-size: larger;
+}
+
+.delete-btn:active{
+  font-size: small;
+}

@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: repeating-linear-gradient(to right, green, black, green, black, green);
+  height: 100vh;
+}
+
+.movie-wrapper{
+  margin: auto;
+  width: 75%;
+  height: 75%;
+  position: relative;
+}
+
+.btn-slide{
+  position: absolute;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-slide:active{
+  background-color: #999;
+}
+
+.slide-prev{
+  left: 0;
+  top: 40%;
+}
+
+.slide-next{
+  right: 0;
+  top: 40%;
+}
+
+.movie-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.movie-card{
+  width: 25%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
