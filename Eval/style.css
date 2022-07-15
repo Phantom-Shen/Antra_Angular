@@ -18,11 +18,13 @@ body{
 
 .btn-slide{
   position: absolute;
-  font-weight: bold;
-  width: 3rem;
-  height: 3rem;
+  font-weight: normal;
+  font-size: 3vh;
+  width: 5vh;
+  height: 5vh;
+  border: 0.1vh solid;
   border-radius: 50%;
-  
+  transform: translate(-50%, -50%);
 }
 
 .btn-slide:active{
@@ -32,22 +34,21 @@ body{
 .slide-prev{
   left: 0;
   top: 40%;
-  transform: translate(-50%, 0);
+  
 }
 
 .slide-next{
-  right: 0;
+  left: 100%;
   top: 40%;
-  transform: translate(50%, 0);
 }
 
 .movie-list{
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
 }
 
 .movie-card{
-  width: 25%;
+  width: 23%;
   color: white;
   display: flex;
   flex-direction: column;
