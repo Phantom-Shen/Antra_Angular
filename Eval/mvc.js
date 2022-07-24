@@ -1,4 +1,4 @@
-import {Api} from "./Api/api.js"
+import {Api} from "./api/api.js"
 
 const View = (() => {
   const domStr = {
