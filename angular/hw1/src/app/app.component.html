@@ -1,0 +1,10 @@
+<header [ngStyle]="{ color: color }">This is header. Change my color</header>
+<main>
+  <app-news
+    *ngFor="let news of newsList; let i = index"
+    [news]="news"
+    [activeIndex]="i"
+    [activated]="activeList[i]"
+    (newActive)="changeActive($event)"
+  ></app-news>
+</main>

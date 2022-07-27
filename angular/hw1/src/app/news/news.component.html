@@ -1,0 +1,12 @@
+<div
+  class="news-container"
+  [ngStyle]="{ 'border-color': activated ? news.color : 'rgba(0, 0, 0, 0)' }"
+>
+  <h3>{{ news.title }}</h3>
+  <div class="news-content">{{ news.content }}</div>
+  <app-set-color
+    [color]="news.color"
+    [activeIndex]="activeIndex"
+    (newActive)="passNewToParent($event)"
+  ></app-set-color>
+</div>
