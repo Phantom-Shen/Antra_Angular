@@ -1,0 +1,11 @@
+<li
+  [ngStyle]="{
+    'border-left': selected
+      ? '2vw solid ' + card.color
+      : '1vw solid ' + card.color,
+    'background-color': selected ? '#999' : 'white'
+  }"
+>
+  <h4>{{ card.name }}</h4>
+  <span>{{ card.description | short }}</span>
+</li>

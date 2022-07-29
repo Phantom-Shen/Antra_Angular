@@ -1,0 +1,13 @@
+li {
+  border-top: 0.4vw solid #ccc;
+  border-left: 1vw solid red;
+  padding: 1vh 1vw;
+}
+
+h4 {
+  font-size: large;
+}
+
+span {
+  font-size: 0.9rem;
+}

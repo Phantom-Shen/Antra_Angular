@@ -1,0 +1,22 @@
+.displayer-wrapper {
+  margin: 2vh 2vw;
+}
+
+h5 {
+  font-size: x-large;
+  margin: 4vh 0;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+button {
+  float: right;
+  border: none;
+  color: white;
+  width: 14vw;
+  height: 5vh;
+  background-color: blue;
+  border-radius: 10%;
+}

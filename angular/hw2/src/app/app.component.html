@@ -1,0 +1,16 @@
+<main>
+  <section class="menu">
+    <h4>List</h4>
+    <ul>
+      <app-menu-item
+        *ngFor="let card of cards"
+        [card]="card"
+        [selected]="card === selectedCard"
+        (selectedCard)="setSelected($event)"
+      ></app-menu-item>
+    </ul>
+  </section>
+  <section class="displayer">
+    <app-displayer [card]="selectedCard"></app-displayer>
+  </section>
+</main>
