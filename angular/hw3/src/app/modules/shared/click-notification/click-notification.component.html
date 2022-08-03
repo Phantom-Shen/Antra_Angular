@@ -1,0 +1,16 @@
+<section>
+  <header>
+    <h4>Do you want want to select {{ pokemon.name }}?</h4>
+  </header>
+  <main>
+    <img
+      src="{{ pokemon.sprites.front_default }}"
+      alt="{{ pokemon.name }} portrait"
+    />
+  </main>
+
+  <footer>
+    <button (click)="handleNo()">No thanks</button>
+    <button (click)="handleYes()">Yes</button>
+  </footer>
+</section>

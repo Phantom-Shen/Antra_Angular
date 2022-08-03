@@ -1,0 +1,16 @@
+<ul>
+  <app-click-notification
+    *ngIf="pokemon"
+    [pokemon]="pokemon"
+    (clickedNo)="selectPokemon($event)"
+    (clickedYes)="choosePokemon($event)"
+  ></app-click-notification>
+  <app-pokemon-card
+    *ngFor="let pokemon of showedPokemons"
+    [pokemon]="pokemon"
+    (clickedPokemon)="selectPokemon($event)"
+  ></app-pokemon-card>
+  <aside>
+    <app-side-bar (recoverPokemon)="recoverPokemon()"></app-side-bar>
+  </aside>
+</ul>
